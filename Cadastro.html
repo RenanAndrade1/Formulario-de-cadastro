@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Formulário de Cadastro</title>
+    <style>
+    /* Adicionando estilo para centralizar o formulário na tela com ajuda de pesquisas no google */
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+    </style>
+</head>
+<body class="w3-blue-grey">
+<form id="form1" name="form1" method="post" action="Processacadastro.php">
+    <!-- Título principal do formulário -->
+    <div class="w3-container w3-card-4 w3-white w3-text-indigo w3-margin" style="max-width:600px">
+        <h2 class="w3-center">Formulário de Cadastro</h2>
+        <div class="w3-row w3-section">
+    <!-- Configurações dos campos do formulário -->
+        nome: <input class="w3-input w3-border" name="nome" type="text" id="nome" placeholder="Digite seu nome completo" required><br>
+        idade: <input class="w3-input w3-border" name="idade" type="text" id="idade" placeholder="EX: 25" required><br>
+        profissão: <input class="w3-input w3-border" name="profis" type="text" id="profis" placeholder="Digite sua profissão. EX: Engenheiro" required><br>
+        salário: <input class="w3-input w3-border" name="sal" type="text" id="sal" placeholder="Digite seu salário. EX: 2500" required><br>
+        experiência: <textarea name="exp" id="exp" placeholder="Conte suas experiências anteriores" class="w3-block w3-padding" required></textarea><br>
+        <input name="Enviar" type="submit" id="Enviar" value="Enviar" class="w3-button w3-block w3-indigo w3-section w3-padding">
+        </div>
+    </div>
+    </form>
+</body>
+</html>
